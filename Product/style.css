@@ -1,0 +1,502 @@
+html, body { margin: 0; 
+    padding: 0; 
+} 
+/* --- Navigation bar --- */
+
+.navBar {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    background-color: #333;
+}
+
+.navBar li {
+    float: left;
+}
+
+.navBar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navBar .fa {
+    font-size: 37px;
+    margin-top: -20px;
+    
+}
+.navBar .shop-card {
+    display: block;
+    float: right;
+    margin-right: 25px;
+}
+
+.navBar .dropdown i {
+    font-size: 25px;
+    color: white;
+    font-family:'FontAwesome' !important;
+    padding: 5px;
+}
+
+
+.navBar li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 44px 46px;
+    text-decoration: none;
+}
+
+navBar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #6699ff;
+}
+
+.navBar li.dropdown {
+    display: inline-block;
+}
+
+.navBar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navBar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navBar .dropdown-content a:hover {background-color: grey;}
+
+.navBar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- Hover Sidebar --- */
+#Sidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    margin-top: 250px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid red;  
+}
+
+#Sidenav a:hover {
+    left: 0;
+}
+
+.about {
+    top: 20px;
+    background-color: #2196F3;
+    border: 2px solid red;
+}
+
+.news {
+    top: 80px;
+    background-color: #4CAF50;
+}
+
+.Support {
+    top: 140px;
+    background-color: orange;
+}
+
+.contact {
+    top: 200px;
+    background-color: #555;
+}
+/* --- Content --- */
+
+.container {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 190px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.container li{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align:left;
+    font: normal 12px sans-serif;
+    background-color: #ffffff;
+    border:1px solid #dbe3e7;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+    margin: 0 12px 14px 0;
+    padding: 25px;
+}
+
+/* --- Product Image --- */
+.container .photo{
+    display: block;
+    text-align: center;
+    box-shadow : 0 0 20px 8px #f3f3f3 inset;
+
+    width: 275px;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    box-sizing: border-box;
+} 
+
+ /* --- Name of Product --- */
+
+.container h2 {
+    display: block;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    margin: 0;
+}
+
+.container h2 a {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.container .compare{
+    float:right;
+
+    color: #808080;
+    text-decoration: none;
+
+    margin-top: -16px;
+}
+
+/* --- Product Rating ---*/
+
+.container .rating div{
+    display: inline-block;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.container.rating .stars{
+    display: inline-block;
+
+    color: #f09911;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.container .rating .stars i {
+    margin-right: 2px;
+    color: orange;
+}
+
+.container .rating span {
+    margin-bottom: -2px;
+}
+.container .rating span a {
+    color: #808080;
+    text-decoration: none;
+}
+
+/* --- Product Description --- */
+.container .description{
+    margin-top: 20px;
+
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 1.45;
+    white-space: normal;
+
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+
+/* --- Order button and Price --- */
+
+.container button{
+    border-radius: 2px;
+    background-color:  #87bae1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+
+    width: 95px;
+    height: 32px;
+}
+
+.container .out-of-stock{
+    color: #c15017;;
+    font-weight: bold;
+    line-height: 32px;
+
+    width: 95px;
+    height: 32px;
+}
+
+.container .price{
+    float: right;
+
+    color:  #4e4e4e;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 6px;
+    margin: 0;
+}
+
+/* Making the list responsive */
+
+/*@media (max-width: 800px){
+
+    .container .photo{
+        width: 225px;
+    }
+
+    .container .description{
+        max-width: 225px;
+    }
+}*/
+
+/* --- Shopping Card --- */
+
+h1 {
+    text-align: center;
+}
+.card {
+    border: 2px solid red;
+    margin: auto;
+    
+    width: 880px;
+    height: auto;
+}
+
+/* --- Shopping Card Product1/Image --- */
+.card .image {
+    border: 2px solid blue;
+    display: inline-block;
+    float: left;
+    margin: 5px 2px 0 2px;
+    width: 180px;
+    text-align: center;
+}
+
+.product1 #image {
+    margin: 20px 0 0 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    border:1px solid #dbe3e7;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* --- Shopping Card Product1/Details --- */
+
+.card .product-details {
+    position: relative;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid purple;
+    text-align: center;
+}
+
+.product1 #product-details {
+    width: 120px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: -10px;
+    margin-left: 55px;
+}
+
+/* --- Shopping Card Product1/Quantity --- */
+.card .quantity {
+    width: 120px;
+    display: inline-block;
+    border: 2px solid orange;
+    text-align: center;
+}
+.product1 #quantity {
+    display: inline-block;
+    float: right;
+    margin-right: 450px;
+    margin-top: 80px;
+}
+
+.product1 #quantity input[type="number"] {
+    width: 45px;
+    height: 25px;
+    border: 2px solid blue;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+/* --- Shopping Card Product1/Removal --- */
+.card .remove {
+    width: 120px;
+    display: inline-block;
+    border: 2px solid green;
+    text-align: center;
+}
+
+.product1 #remove {
+    float: right;
+    margin-right: 305px;
+    margin-top: -78px;
+
+}
+
+.product1 #remove .button{
+    width: 75px;
+    height: 30px;
+    border-radius: 4px;
+
+    font-size: 14px;
+    color: white;
+    background-color: red;
+
+
+}
+
+/* --- Shopping Card Product1/Total --- */
+
+.card .total {
+    width: 150px;
+    display: inline-block;
+    border: 2px solid blue;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.product1 #total {
+    float: right;
+    margin-top: -78px;
+    margin-right: 150px;
+}
+
+.product1 #total input[type="text"] {
+    width: 75px;
+    height: 25px;
+    border: 2px solid blue;
+    border-radius: 4px;
+
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+/* Buttons */
+
+.buttons {
+    
+}
+
+.buttons .promos {
+    margin: 10px 15px 15px 55px;
+    display: inline-block;
+    width: 300px;
+    height: 35px;
+    border: 2px solid blue;
+    font-size: 14px;
+    text-align: center;
+}  
+
+.buttons .promos:focus {
+    background-color: lightblue;
+}  
+
+.buttons .keep-shopping {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    float: right;
+    background-color: lightgreen;
+    margin: 10px 55px 15px 5px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+.buttons .keep-shopping:hover {background-color: #3e8e41}
+
+.buttons .keep-shopping:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttons .Checkout {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+    background-color: orange;
+    margin-top: -6px;
+    margin-left: 280px;
+
+}
+
+/* --- Price is summorized --- */
+
+ .sales-Tax, .shipping-cost, .summary{
+    height: 25px;
+    width: 80px;
+    border: 1px solid blue;
+    display: block;
+    float: right;
+    margin-top: -10px;
+    margin-right: 150px;
+    clear: both;
+}
+
+.subtotal label{
+    display: block;
+    margin-left: 25px;
+    float: center;
+    clear: both;
+    
+}
+.card .Checkout {
+    margin-top: 35px;
+    width: 350px;
+    height: 35px;
+    margin-left: 250px;
+    background-color: orange;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.card .Checkout i {
+    font-size: 23px;
+    padding: 3px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+footer .text-center {
+    text-decoration: none;
+    margin: auto;
+}

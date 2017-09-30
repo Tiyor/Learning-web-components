@@ -1,0 +1,45 @@
+
+html {
+	background-color: #33cccc;
+}
+
+.welcome * {
+	color: #3399ff; 
+	font-family: 'Righteous', cursive; 
+	font-size: 35px; 
+	font-weight: normal; 
+	line-height: 30px; 
+	margin: 30px 0 20px; 
+	text-transform: uppercase; text-shadow: 2px 2px 0 #000; 
+	text-align: center; 
+}
+
+.accordion {
+	background: #f1f1f1;
+	border-radius: 8px;
+	margin: auto;
+	width: 600px;	
+}
+
+section p {
+	background: light-grey;
+	max-height: 0em;
+	margin: 0;
+	overflow: hidden;
+}
+
+section a {
+	background: #ff33cc;
+	border: 2px solid #00ff00;
+	border-radius: 10px;
+	color: white;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+section:target p {
+	max-height: 20em;
+	padding: 8px;
+}

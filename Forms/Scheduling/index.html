@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Scheduling Form </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form> 
+  <!-- Name of the form -->
+    <div class="main">
+      <h2> BUSINESS SCHEDULING FORM </h2>	
+    </div>
+
+  <!-- Form inputs -->
+    <div class="inner-Wrapper">
+      <label for="name">NAME :</label>
+      <input type="text" class="wrapper" name="full-name" id="name" placeholder="Your name"/>	 
+    </div>
+
+    <div class="inner-Wrapper">
+      <label for="email">EMAIL:</label>
+      <input type="text" class="wrapper" name="email" id="email" placeholder="Your email"/>	 
+    </div>
+
+    <div class="inner-Wrapper">
+      <label for="phone">PHONE NUMBER:</label>
+      <input type="text" class="phone" name="Phone-number" id="phone" placeholder="Phone number"/>	
+    </div>
+
+    <div class="inner-Wrapper">
+      <label for="date"> DATE/TIME:</label>
+        <input type="date" class="date" name="today" id="date"/>	
+        <input type="time" class="time" name="Time" id="date"/> 
+    </div>
+
+    <div class="inner-Wrapper">
+      <label for="text">TEXT:</label>
+      <textarea form ="appoinment" name="message" id="text" cols="35" placeholder="Leave your message"></textarea> 
+    </div>
+
+    <div class="inner-Wrapper">
+      <label for="contact">BEST CONTACT TIME:</label>
+        <label for="morning">Morning</label>
+        <input type="checkbox" class="check" name="contact-method" id="morning">
+        <label for="afternoon">Afternoon</label>    
+        <input type="checkbox" class="check" name="contact-method" id="afternoon">   
+    </div>
+
+    <button type="button" name="submit">SUBMIT</button>
+    </form> 	
+  </div>
+</body>
+</html>

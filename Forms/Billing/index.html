@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Billing & Shipping Forms</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Main content -->
+        <div class="main-unit">
+            <p><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>CHECKOUT... </p>
+            <div class="coupon">
+            	<p> <i class="fa fa-gift" aria-hidden="true"></i> Have a coupon?
+                <a href="#"><strong>Click here to enter your code</strong></a>
+                </p>
+            </div>    	
+        </div>
+
+        <div class="row">
+            <!-- Billing address -->
+            <div class="row1">
+                <form class="billing">
+                  <fieldset>
+                    <legend>BILLING INFORMATION</legend>
+                    <label for="firstname">First name:</label><input class="no-cash" type="text" id="firstname" autofocus required>
+                    <label for="lastname">Last name:</label><input class="no-cash" type="text" id="lastname" required>
+                    <label for="address">Address:</label><input class="no-cash" type="text" id="address" required>
+                    <label for="city">City:</label><input class="no-cash" type="text" id="city" required>
+                    <label for="country2">Country:</label><input class="no-cash" type="text" id="country2" required>
+                  </fieldset>
+                </form>	
+            </div>
+
+            <!-- Shipping address -->
+            <div class="row2">
+                <form class="shipping">
+                  <fieldset>
+                    <legend>SHIPPING INFORMATION</legend>
+                    <label for="billing-info">Same as my billing address:</label><input class="no-cash" type="checkbox" id="billing-info" name="billing-info" autofocus>
+                    <label for="firstname2">First name:</label><input class="no-cash" type="text" id="firstname2"  required>
+                    <label for="lastname2">Last name:</label><input class="no-cash" type="text" id="lastname2" required>
+                    <label for="address2">Address:</label><input class="no-cash" type="text" id="address2" required>
+                    <label for="city">City:</label><input class="no-cash" type="text" id="city" required>
+                    <label for="country2">Country:</label><input class="no-cash" type="text" id="country2" required>
+                  </fieldset>
+                    <button type="submit" class="button"> SUBMIT </button>
+                </form>    	
+            </div>  
+        </div>  	
+    </div>
+</body>
+</html>

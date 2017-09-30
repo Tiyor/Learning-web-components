@@ -1,0 +1,97 @@
+
+.container {
+	background-color: #DAF7A6;
+}
+
+/* --- Checkout screen --- */
+.main-unit {   
+	background-color: #DAF7A6;
+	font-family: verdana;
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	padding-top: 20px;
+	padding-left: 40px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.coupon {
+	font-family: calibri;
+	font-size: 18px;	
+	text-align: left;
+	width: 650px;
+}
+
+.coupon a {
+	text-decoration: none;
+}
+
+/* --- Container for two forms --- */
+.row {
+	background:url(./money-256314_1280.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 800px;
+	margin-top: 55px;
+}
+
+
+fieldset {
+	border-radius: 8px;    
+}
+
+label {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	text-align: center;	
+}
+
+legend {
+	background-color: light-green;
+	color: #15D808;
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
+/* --- Billing Information --- */
+.row1 {
+	display: inline-block;
+	margin-left: 200px;
+	padding-top: 110px;	
+}
+
+/* --- Shipping Information --- */
+.row2 {
+	display: inline-block;
+	float: right;
+	margin-right: 200px;
+	padding-top: 90px;
+}
+
+form .no-cash {
+	border-radius: 5px;
+	display: block;
+	font-size: 16px;
+	height: 30px;
+	margin: 10px 0 10px 0;
+	padding: 5px;
+	width: 350px;
+}
+
+.button {
+	background: rgb(28, 184, 65);
+	border-radius: 4px;
+	color: white;
+	font-size: 25px;
+	height: 45px;
+	margin-top: 10px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	width: 398px;
+}
+
+
+
+
