@@ -242,15 +242,6 @@ navBar li a:hover, .dropdown:hover .dropbtn {
     height: 32px;
 }
 
-.container .out-of-stock{
-    color: #c15017;;
-    font-weight: bold;
-    line-height: 32px;
-
-    width: 95px;
-    height: 32px;
-}
-
 .container .price{
     float: right;
 
@@ -261,19 +252,6 @@ navBar li a:hover, .dropdown:hover .dropbtn {
     padding-top: 6px;
     margin: 0;
 }
-
-/* Making the list responsive */
-
-/*@media (max-width: 800px){
-
-    .container .photo{
-        width: 225px;
-    }
-
-    .container .description{
-        max-width: 225px;
-    }
-}*/
 
 /* --- Shopping Card --- */
 
@@ -288,7 +266,7 @@ h1 {
     height: auto;
 }
 
-/* --- Shopping Card Product1/Image --- */
+/* --- Shopping Card /Image --- */
 .card .image {
     border: 2px solid blue;
     display: inline-block;
@@ -309,7 +287,7 @@ h1 {
 }
 
 
-/* --- Shopping Card Product1/Details --- */
+/* --- Shopping Card /Details --- */
 
 .card .product-details {
     position: relative;
@@ -328,7 +306,7 @@ h1 {
     margin-left: 55px;
 }
 
-/* --- Shopping Card Product1/Quantity --- */
+/* --- Shopping Card /Quantity --- */
 .card .quantity {
     width: 120px;
     display: inline-block;
@@ -339,7 +317,7 @@ h1 {
     display: inline-block;
     float: right;
     margin-right: 450px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .product1 #quantity input[type="number"] {
@@ -351,7 +329,7 @@ h1 {
     font-size: 14px;
 }
 
-/* --- Shopping Card Product1/Removal --- */
+/* --- Shopping Card /Removal --- */
 .card .remove {
     width: 120px;
     display: inline-block;
@@ -362,7 +340,7 @@ h1 {
 .product1 #remove {
     float: right;
     margin-right: 305px;
-    margin-top: -78px;
+    margin-top: -98px;
 
 }
 
@@ -374,11 +352,9 @@ h1 {
     font-size: 14px;
     color: white;
     background-color: red;
-
-
 }
 
-/* --- Shopping Card Product1/Total --- */
+/* --- Shopping Card /Total --- */
 
 .card .total {
     width: 150px;
@@ -405,10 +381,6 @@ h1 {
 }
 
 /* Buttons */
-
-.buttons {
-    
-}
 
 .buttons .promos {
     margin: 10px 15px 15px 55px;
@@ -473,9 +445,9 @@ h1 {
     display: block;
     margin-left: 25px;
     float: center;
-    clear: both;
-    
+    clear: both; 
 }
+
 .card .Checkout {
     margin-top: 35px;
     width: 350px;
