@@ -303,7 +303,7 @@ h1 {
     height: 100px;
     display: inline-block;
     overflow: hidden;
-    margin-top: -6px;
+    margin-top: -10px;
     margin-left: 55px;
 }
 
@@ -318,7 +318,7 @@ h1 {
     display: inline-block;
     float: right;
     margin-right: 450px;
-    margin-top: 90px;
+    margin-top: 84px;
 }
 
 .product1 #quantity input[type="number"] {
@@ -341,7 +341,7 @@ h1 {
 .product1 #remove {
     float: right;
     margin-right: 305px;
-    margin-top: -98px;
+    margin-top: -93px;
 
 }
 
