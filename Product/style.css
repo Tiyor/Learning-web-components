@@ -258,6 +258,7 @@ navBar li a:hover, .dropdown:hover .dropbtn {
 h1 {
     text-align: center;
 }
+
 .card {
     border: 2px solid red;
     margin: auto;
@@ -317,7 +318,7 @@ h1 {
     display: inline-block;
     float: right;
     margin-right: 450px;
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .product1 #quantity input[type="number"] {
