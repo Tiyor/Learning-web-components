@@ -6,17 +6,17 @@
 
 ### Section 1: Basic Projects
 
-* [Accordian](https://tiyor.github.io/Learning-web-components/Accordian/) 
+* [Accordian Component](https://tiyor.github.io/Learning-web-components/Accordian/) 
 * [Calculator](https://tiyor.github.io/Learning-web-components/Calculator/) 
 
 #### Forms
 
-* [Billing](https://tiyor.github.io/Learning-web-components/Forms/Billing/)  
-* [Card](https://tiyor.github.io/Learning-web-components/Forms/Card/)  
-* [Scheduling](https://tiyor.github.io/Learning-web-components/Forms/Scheduling/) 
-* [SignUp](https://tiyor.github.io/Learning-web-components/Forms/SignUp/)
+* [Shipping/Billing Adress Form](https://tiyor.github.io/Learning-web-components/Forms/Billing/)  
+* [Credit Card Form ](https://tiyor.github.io/Learning-web-components/Forms/Card/)  
+* [Scheduling Form](https://tiyor.github.io/Learning-web-components/Forms/Scheduling/) 
+* [SignUp Form](https://tiyor.github.io/Learning-web-components/Forms/SignUp/)
 
 ### Section 2: Intermediate Projects
 
-* [Product](https://tiyor.github.io/Learning-web-components/Product/)  
+* [Product Listing Page](https://tiyor.github.io/Learning-web-components/Product/)  
             
