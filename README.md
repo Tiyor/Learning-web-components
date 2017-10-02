@@ -4,19 +4,19 @@
 
 ## Sections
 
-### Section 1: Basic 
+### Section 1: Basic Projects
 
 * [Accordian](https://tiyor.github.io/Learning-web-components/Accordian/) 
 * [Calculator](https://tiyor.github.io/Learning-web-components/Calculator/) 
 
-### Section 2: Forms
+#### Forms
 
 * [Billing](https://tiyor.github.io/Learning-web-components/Forms/Billing/)  
 * [Card](https://tiyor.github.io/Learning-web-components/Forms/Card/)  
 * [Scheduling](https://tiyor.github.io/Learning-web-components/Forms/Scheduling/) 
 * [SignUp](https://tiyor.github.io/Learning-web-components/Forms/SignUp/)
 
-### Section 3: Intermediate
+### Section 2: Intermediate Projects
 
 * [Product](https://tiyor.github.io/Learning-web-components/Product/)  
             
