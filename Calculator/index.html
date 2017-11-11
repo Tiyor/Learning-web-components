@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> Project Assignment 1 </title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title> Basic Calculator </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
 </head>
+
 <body>
-  <div id="container">
-    <!-- Screen -->
-    <div class="top">
-      <input type="text" name="screen">  
-    </div>
+	<div id="container">
+		<form name="calculator">
+			<input type="text" id="display"  />
+			<br>
 
-    <div class="keys">
-      <!-- Operators and other keys -->
-      <div class="row1">
-        <span class="operator">DEL</span>
-        <span class="operator">CLEAR</span>
-        <span class="operator">%</span>
-        <span class="operator">/</span>   
-      </div>
+			<input type="button" value=' CLEAR ' class="operator clean" onclick='clearDisplay("clear")' />
+			<input type="button" value=' DEL '   class="keys clean" onclick='backSpace()'   />
+			<input type="button" value=' + '     class="keys" onclick='passToScreen("+")' />
+			<br />
 
-      <div class="row2">
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span class="operator">x</span>
-      </div>
+			<input type="button" value=' 9 ' class="keys" onclick='passToScreen("9")' />
+			<input type="button" value=' 8 ' class="keys" onclick='passToScreen("8")' />
+			<input type="button" value=' 7 ' class="keys" onclick='passToScreen("7")' />
+			<input type="button" value=' - ' class="keys" onclick='passToScreen("-")' />
+			<br />
 
-      <div class="row3">
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span class="operator">-</span>   
-      </div>
+			<input type="button" value=' 6 ' class="keys" onclick='passToScreen("6")' />
+			<input type="button" value=' 5 ' class="keys" onclick='passToScreen("5")' />
+			<input type="button" value=' 4 ' class="keys" onclick='passToScreen("4")' />
+			<input type="button" value=' * ' class="keys" onclick='passToScreen("*")' />
+			<br />
 
-      <div class="row4">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span class="operator">+</span>  
-      </div>
-      
-      <div class="row5">
-        <span>0</span>
-        <span>.</span>
-        <span class="eval">=</span>    
-      </div>    
-    </div>     
-  </div>    
+			<input type="button" value=' 3 ' class="keys" onclick='passToScreen("3")' />
+			<input type="button" value=' 2 ' class="keys" onclick='passToScreen("2")' />
+			<input type="button" value=' 1 ' class="keys" onclick='passToScreen("1")' />
+			<input type="button" value=' / ' class="keys" onclick='passToScreen("/")' />
+			<br />
+
+			<input type="button" value=' 0 ' class="keys" onclick='passToScreen("0")' />
+			<input type="button" value=' . ' class="keys" onclick='passToScreen(".")' />
+			<input type="button" value=' = ' class="operator equal" onclick='doMath()' />
+			<br />
+		</form>
+		<h6>TIYOR @BOV ACADEMY 2017</h6>
+	</div>
+
 </body>
 </html>
