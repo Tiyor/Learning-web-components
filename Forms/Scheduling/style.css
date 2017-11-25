@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+	
     background-color: hsla(0,0%,100%,0.40);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -16,9 +17,10 @@ body {
 }
 
 h2 {
-	color: #FFFFFF;
-	font: normal 20pt Arial;
+    color: #FFFFFF;
+    font: normal 20pt Arial;
     text-align: center;
+	
     text-shadow: 0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
@@ -33,136 +35,120 @@ h2 {
 
 /* --- Container --- */
 .container {
-	width: 750px;
-	height: 460px;
-	margin: 0 auto;
-	background-color: rgba(0,0,0,0.5);
-	margin-top: 60px;
-	margin-right: 60px;
-	padding-top: 10px;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-o-border-radius: 15px;
-	-moz-border-radius:15px;
-	color: white;
-	font-weight: bolder;
-	box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+    width: 720px;
+    height: 510px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 60px;
+    margin-right: 60px;
+    padding-top: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -o-border-radius: 15px;
+    -moz-border-radius:15px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: inset -4px -4px rgba(0,0,0,0.5);
 }
 
-/*.inner-Wrapper.wrapper.phone {
+.inner-Wrapper .wrapper{
     background-color: transparent; 
     border-style: solid; 
     border-width: 0px 0px 1px 0px; 
     border-color: white;
-	height: 35px;
-	width: 300px;
-	margin-top: 10px;  
-
-	text-align: center;
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-}*/
-
-.inner-Wrapper .wrapper{
-	background-color: transparent; 
-    border-style: solid; 
-    border-width: 0px 0px 1px 0px; 
-    border-color: white;
-	height: 35px;
-	width: 300px;
-	margin-top: 10px;
-	margin-left: 130px;
+    height: 35px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 130px;
 	
-	text-align: center;
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.inner-Wrapper .phone {
-	width: 300px;
-	height: 35px;
-	margin-top: 10px;
-	margin-left: 52px;
-	background-color: transparent; 
+.phone {
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 52px;
+    background-color: transparent; 
     border-style: solid; 
     border-width: 0px 0px 1px 0px; 
     border-color: white;
 
-	text-align: center;
-	font-size: 15px;
-	color: white;
-	font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
 }
 
-.inner-Wrapper .date {
-	display: inline-block;
-	width: 120px;
-	height: 35px;
-	margin-top: 10px;
-	margin-left: 94px;
+.date {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 94px;
 }
 
-.inner-Wrapper .time {
-	display: inline-block;
-	width: 120px;
-	height: 35px;
-	margin-top: 10px;
-	float: right;
-	margin-right: 232px;
+.time {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 232px;
 }
 
 label {
-	padding-left: 20px;
+    padding-left: 20px;
 }
 
 .inner-Wrapper textarea {
-	
-	height: 55px;
-	margin-left: 141px;
+    height: 55px;
+    margin-left: 141px;
 
-	background-color: transparent; 
+    background-color: transparent; 
     border-style: solid; 
     border-width: 1px; 
     border-color: white;
     margin-top: 10px;
     width: 300px;
 
-	text-align: center;
-	font-size: 15px;
-	color: white;
-	font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
 }
-.inner-Wrapper textarea:focus {
-	background-color: lightblue;
 
+.inner-Wrapper textarea:focus {
+    background-color: lightblue;
 }
+
 input::placeholder {
-  color: white;
+    color: white;
 }
 
 .inner-Wrapper textarea::placeholder {
-  color: white;
+    color: white;
 }
 
-.inner-Wrapper .check {
-	display: inline-block;
-	margin-top: 15px;	
-	text-align: right;
-
+.check {
+    display: inline-block;
+    margin-top: 15px;	
+    text-align: right;
 }
 
 button {
-	width: 310px;
-	height: 45px;
-	margin-top: 16px;
-	float: center;
-	margin-left: 210px;
-	border-radius: 10px;
+    width: 310px;
+    height: 45px;
+    margin-top: 16px;
+    float: center;
+    margin-left: 210px;
+    border-radius: 10px;
 
-	color: black;
-	letter-spacing: 3px;
+    color: black;
+    letter-spacing: 3px;
     font-weight: bold;
     border-bottom: 2px white;
 
@@ -176,8 +162,7 @@ button {
 }
 
 button:hover {
-	cursor: pointer;
-	color: #FFF;
+    cursor: pointer;
+    color: #FFF;
     background: #006600;
-
 }
