@@ -6,27 +6,27 @@
 </head>
 <body>
     <div class="main">
-      <div class="starter">
-          <p><strong>PAYMENT DETAILS</strong>
-            <img src="./card_detail.png " alt="Type of cards">
-          </p>   	
-      </div>
-      <form>
-        <div class="card-details">
-            <label for="name"><strong>NAME ON CARD:</strong></label>
-            <input type="text" class="details fullname" name="fullname" placeholder="Full Name" id="name" required/>      
+        <div class="starter">
+            <p><strong>PAYMENT DETAILS</strong>
+                <img src="./card_detail.png " alt="Type of cards">
+            </p>
         </div>
-        
-         <div class="card-details">
-            <label for="cardNum"><strong>CARD NUMBER:</strong></label>
-            <input type="text" class="details" name="card number" placeholder="Valid Card Number" id="cardNum
-            " maxlength="19" required/> 
-        </div>  
-        
-        <div class="date-expiration">    
-            <label for="date"><strong>EXPIRATION DATE:</strong></label>
-                <select name="Month" id="date">
-                    <option value="month">Month</option>
+
+        <form id="credit_card">
+            <div class="card-details">
+                <label for="name" id="one"><strong>NAME ON CARD:</strong></label>
+                <input type="text" class="details fullname" pattern="^[A-Za-z]([-']?[A-Za-z]+)*( [A-Za-z]([-']?[A-Za-z]+)*)+$" placeholder="Full Name" required/>
+            </div>
+
+            <div class="card-details">
+                <label for="cardNum"><strong>CARD NUMBER:</strong></label>
+                <input type="text" class="details" maxlength="16" pattern="[0-9]{13,16}" name="cnumber" placeholder="Valid Card Number" required/>
+            </div>
+
+            <div class="date-expiration">
+                <label for="date"><strong>EXPIRATION DATE:</strong></label>
+                <select required name="Month" id="date">
+                    <option value="">Month</option>
                 	<option value="0">January</option>
 	                <option value="1">February</option>
 	                <option value="2">March</option>
@@ -40,8 +40,8 @@
 	                <option value="10">November</option>
 	                <option value="11">December</option>
                 </select>
-                <select name="Year" class="year">
-                    <option value="year">Year</option>
+                <select required name="Year" class="year">
+                    <option value="">Year</option>
                     <option value="2017">2017</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -63,20 +63,24 @@
                     <option value="2035">2035</option>
                     <option value="2036">2036</option>
                 </select>
-          </div> 
-          
-          <div data-tip="3 or 4 digits usually found on the signature strip" class="security">
-            <label for="cvs"><strong>CV CODE:</strong></label>
-            <input type="text" class="CVC" name="cvc code" id="cvs" placeholder="CVC" maxlength="4" required/> 
-        </div> 
+            </div>
 
-        <div class="card-details">
-            <label for="coupon"><strong>COUPON CODE:</strong></label>
-            <input type="text" class="details" name="coupon code" id="coupon" placeholder="Enter coupon code"> 
-        </div> 
-            <button type="button" class="button">START SUBSCRIPTION</button>
-        </div>
-      </form>     	
+            <div data-tip="3 or 4 digits usually found on the signature strip" class="security">
+                <label for="cvs"><strong>CV CODE:</strong></label>
+                <input type="text" class="CVC" name="cvc code" placeholder="CVC" minlength="3" maxlength="3" required/>
+            </div>
+
+            <div class="card-details">
+                <label for="coupon"><strong>COUPON CODE:</strong></label>
+                <input type="text" class="details" name="coupon" placeholder="Enter coupon code">
+            </div>
+
+            <div>
+                <button>SUBMIT</button>
+            </div>
+
+        </form>
     </div>
 </body>
+
 </html>
