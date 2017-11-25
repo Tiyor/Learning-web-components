@@ -166,7 +166,7 @@ button {
 }
 
 #credit_card input:optional {
-       border-left-color: blue;
+       border-left-color: palegreen;
 }
 
 
