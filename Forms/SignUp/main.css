@@ -16,72 +16,91 @@ body {
 }
 
 .sign-up {
-	height: 600px;
+    height: 625px;
     margin-left: 220px;
-    padding-top: 200px; 
     width: 550px;
+    border-style: double;
+    border-radius: 40px;
+    background-color: #F8F8F8;  
 }
 
 .sign-up .style {
-    border: 1px solid #999;
+    border: 2px solid #999;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-	display: block;
-    height: 25px;
-    margin-bottom: 10px;
-    padding-top: 15px;
-	width: 450px;
+    display: block;
+    height: 30px;
+    padding: 12px;
+    width: 450px;
+    margin: 10px 32px;
+    border-radius: 10px;
+   
     
-	/* Typography */
-	font-family: Verdana;
-	font-size: 16px;
+    /* Typography */
+    font-family: Verdana;
+    font-size: 16px;
     padding-bottom: 6px;
-	text-align: center;
+    text-align: center;
 }
 
-fieldset {
-    border-radius: 8px;
-    border: 2px solid darkblue;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+legend  {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px #57D6C7;
+    margin-left: 170px;
+    margin-top: 0px;
 }
 
-span  {
-	font-size: 25px;
-	font-weight: bold;
-	text-shadow: 1px 1px #57D6C7;
+span {
+    font-size: 2.5rem;
+    color: #FFF;
+    background-color: #4BA0FF;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    visibility: visible;
 }
 
 .innerWrapper {
-	position: relative;
+    position: relative;
 }
 
 .innerWrapper i {
     color: #aaa;
     padding: 9px 8px;
-	position: absolute;
+    position: absolute;
     top: 8px;
-    transition:.3s;  
+    transition:.3s; 
 }
 
 input[type=text]:focus{
-    border-color: dodgerBlue;
-    box-shadow: 0 0 8px 0 dodgerBlue;
+    border-color: #0033FF;
+    box-shadow: 0 0 5px 0 #0033FF;
 }
 
-.innerWrapper input[type=text]:focus + i{
-    color: dodgerBlue;
+input[type=checkbox] {
+    margin-left: 100px;
+    margin-top : 15px;
 }
 
 input[type=submit] {
     background-color: white;
-    border: 1px solid #57D6C7;
-    border-radius: 5px;
+    border: 2px solid #57D6C7;
+    border-radius: 10px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     color: black;
     cursor: pointer;
-    font-size: 18px !important;
+    display : block;
+    font-size: 20px !important;
+    letter-spacing: 3px;
     font-weight: bold;
+    height : 50px;
+    width: 480px;
+    margin: 12px 25px 25px 30px;
     padding: 10px 15px 8px !important;
+  
     text-shadow: 1px 1px #57D6C7;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -moz-border-radius: 5px;
