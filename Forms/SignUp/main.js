@@ -1,4 +1,145 @@
-//     ****** ~~~ Validator Functions ~~~ ******
+//     ****** ~~~ Form validation functions  ~~~ ******
+window.onload = function() {
+    var signUp = document.getElementById("signUp");
+    var fName = document.getElementById("fName");
+    var lName = document.getElementById("lName");
+    var email = document.getElementById("em");
+    var dateBirth = document.getElementById("dob");
+    var phone = document.getElementById("pn");
+    var passwor = document.getElementById("passw");
+    var confPassw = document.getElementById("cpassw");
+    var suButton = document.getElementById("subMit");
+
+    suButton.addEventListener('click', function(event) {
+        isNameValid(fName);
+        isLNameValid(lName);
+        isEmailValid(email);
+        isDOBValid(dateBirth);
+        isPhoneValid(phone);
+        isPassWord(passwor);
+        confPassword(confPassw);
+    });
+
+    signUp.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
+
+    // Validates user first name  
+    function isNameValid(char) {
+        var val = char.value;
+        if (validator.isEmpty(val)) {
+            char.setCustomValidity("Let's get started. Please, enter your first name");
+            char.style.borderBottomColor = "red";
+        } else if (val.length < 2) {
+            char.setCustomValidity("We expect your input should contain at least 2 characters, darling!");
+            char.style.borderBottomColor = "red";
+        } else if (!validator.isAlphabetic(val)) {
+            char.setCustomValidity("Ooops... only alphabetic characters. Names contain neither digits nor keyboard symbols, right?!");
+            char.style.borderBottomColor = "red";
+        } else {
+            char.setCustomValidity("");
+            char.style.borderColor = "green";
+        }
+    }
+
+    // Validates user last name 
+    function isLNameValid(elem) {
+        var value = elem.value;
+        if (validator.isEmpty(value)) {
+            elem.setCustomValidity("Yup... You shouldn't leave it blank. Enter your last name, please");
+            elem.style.borderBottomColor = "red";
+        } else if (value.length < 2) {
+            elem.setCustomValidity("NOTE: Your last name should contain at least 2 characters !");
+            elem.style.borderBottomColor = "red";
+        } else if (!validator.isAlphabetic(value)) {
+            elem.setCustomValidity("Ooops... only alphabetic characters. Names contain neither digits nor keyboard symbols, right?!");
+            elem.style.borderBottomColor = "red";
+        } else {
+            elem.setCustomValidity("");
+            elem.style.borderColor = "green";
+        }
+    }
+
+    // Validates user email 
+    function isEmailValid(input) {
+        var val = input.value;
+        if (validator.isEmpty(val)) {
+            input.setCustomValidity("Please, enter your email");
+            input.style.borderBottomColor = "red";
+        } else if (validator.isEmailAddress(val) !== true) {
+            input.setCustomValidity("Okay, your email should not start and end with dot, only includes one @ in the middle.");
+            input.style.borderBottomColor = "red";
+        } else {
+            input.setCustomValidity("");
+            input.style.borderColor = "green";
+        }
+    }
+
+    // Validates user date of birth 
+    function isDOBValid(num) {
+        var val = num.value;
+        var minAge = 12;
+
+        if (validator.isEmpty(val)) {
+            num.setCustomValidity("Please, give me your DOB in 'yyyy/mm/dd' format");
+            num.style.borderBottomColor = "red";
+        } else if ((getAge(val) < minAge) || (validator.isAfterToday(val))) {
+            num.setCustomValidity("Are you 12 years old? Then you are good to have account with us.");
+            num.style.borderBottomColor = "red";
+        } else {
+            num.setCustomValidity("");
+            num.style.borderColor = "green";
+        }
+    }
+
+    // Validates user phone number 
+    function isPhoneValid(number) {
+        var res = number.value;
+        if (validator.isEmpty(res)) {
+            number.setCustomValidity("Please, enter your phone number");
+            number.style.borderBottomColor = "red";
+        } else if (validator.isPhoneNumber(res) !== true) {
+            number.setCustomValidity("Your input has to be in right format. Please, check it once more");
+            number.style.borderBottomColor = "red";
+        } else {
+            number.setCustomValidity("");
+            number.style.borderColor = "green";
+        }
+    }
+
+    // Validates user password 
+    function isPassWord(chars) {
+        var val = chars.value;
+        if (validator.isEmpty(val)) {
+            chars.setCustomValidity("Please, create a password");
+            chars.style.borderBottomColor = "red";
+        } else if (val.length < 6 || val.length > 8) {
+            chars.setCustomValidity("Your password has to be  6 length to 8 characters");
+            chars.style.borderBottomColor = "red";
+        } else {
+            chars.setCustomValidity("");
+            chars.style.borderColor = "green";
+        }
+    }
+
+    // Confirms the password
+    function confPassword(input) {
+        var passw2 = input.value;
+        var passw1 = document.getElementById("passw").value;
+        if (validator.isEmpty(passw2)) {
+            input.setCustomValidity("Last but not least, please confirm your password for me !");
+            input.style.borderBottomColor = "red";
+        } else if (passw1 !== passw2) {
+            input.setCustomValidity("Hmm... Passwords are not matching! They should be identical.");
+            input.style.borderBottomColor = "red";
+        } else {
+            input.setCustomValidity("");
+            input.style.borderColor = "green";
+        }
+    }
+};
+
+// ****** ~~~~~ VALIDATOR FUNCTIONS ~~~~~ ******
 var validator = {};
 
 // ***** Checks if entered input is empty *****
@@ -16,7 +157,7 @@ validator.isEmpty = function(input) {
     }
     return true;
 };
-validator.isEmpty(null); // returns false
+validator.isEmpty("dsf"); // returns false
 
 // ****** Checks if input is contained with alphabetic characters
 validator.isAlphabetic = function(input) {
@@ -88,152 +229,3 @@ function getAge(input) {
     return age;
 }
 getAge('1980/08/10');
-
-
-//     ****** ~~~ Form validation functions  ~~~ ******
-
-window.onload = function() {
-        var signUp = document.getElementById("signUp");
-        var fName = document.getElementById("fName");
-        var lName = document.getElementById("lName");
-        var email = document.getElementById("emAil");
-        var dateBirth = document.getElementById("dob");
-        var phone = document.getElementById("pn");
-        var passwor = document.getElementById("passw");
-        var confPassw = document.getElementById("cpassw");
-        var suButton = document.getElementById("subMit");
-
-        suButton.addEventListener('click', function(event) {
-            isNameValid(fName);
-            isLNameValid(lName);
-            isEmailValid(email);
-            isDOBValid(dateBirth);
-            isPhoneValid(phone);
-            isPassWord(passwor);
-            confPassword(confPassw);
-        });
-
-        signUp.addEventListener('submit', function(event) {
-            event.preventDefault();
-        });
- 
-// Validates user first name  
-function isNameValid(char) {
-    var val = char.value;
-    if (validator.isEmpty(val)) {
-        char.setCustomValidity("Let's get started. Please, enter your first name");
-        char.style.borderColor = "red";
-    } else if (val.length < 2) {
-        char.setCustomValidity("We expect your input should contain at least 2 characters, darling!");
-        char.style.borderColor = "red";
-    } else if (!validator.isAlphabetic(val)) {
-        char.setCustomValidity("Ooops... only alphabetic characters. Names contain neither digits nor keyboard symbols, right?!");
-        char.style.borderColor = "red";
-    } else {
-        char.setCustomValidity("");
-        char.style.borderColor = "green";
-    }
-}
-
-// Validates user last name 
-function isLNameValid(elem) {
-    var value = elem.value;
-    if (validator.isEmpty(value)) {
-        elem.setCustomValidity("Yup... You shouldn't leave it blank. Enter your last name, please");
-        elem.style.borderColor = "red";
-    } else if (value.length < 2) {
-        elem.setCustomValidity("NOTE: Your last name should contain at least 2 characters !");
-        elem.style.borderColor = "red";
-    } else if (!validator.isAlphabetic(value)) {
-        elem.setCustomValidity("Ooops... only alphabetic characters. Names contain neither digits nor keyboard symbols, right?!");
-        elem.style.borderColor = "red";
-    } else {
-        elem.setCustomValidity("");
-        elem.style.borderColor = "green";
-    }
-}
-
-// Validates user email 
-function isEmailValid(input) {
-    var val = input.value;
-    if (validator.isEmpty(val)) {
-        input.setCustomValidity("Please, enter your email");
-        input.style.borderColor = "red";
-    } else if (validator.isEmailAddress(val) !== true) {
-        input.setCustomValidity("Okay, your email should not start and end with dot, only includes one @ in the middle.");
-        input.style.borderColor = "red";
-    } else {
-        input.setCustomValidity("");
-        input.style.borderColor = "green";
-    }
-}
-
-// Validates user date of birth 
-function isDOBValid(num) {
-    var val = num.value;
-    var minAge = 12;
-
-    if (validator.isEmpty(val)) {
-        num.setCustomValidity("Please, give me your DOB in 'yyyy/mm/dd' format");
-        num.style.borderColor = "red";
-    } else if ((getAge(val) < minAge) || (validator.isAfterToday(val))) {
-        num.setCustomValidity("Are you 12 years old? Then you are good to have account with us.");
-        num.style.borderColor = "red";
-    } else {
-        num.setCustomValidity("");
-        num.style.borderColor = "green";
-    }
-}
-
-// Validates user phone number 
-function isPhoneValid(number) {
-    var res = number.value;
-    if (validator.isEmpty(res)) {
-        number.setCustomValidity("Please, enter your phone number");
-        number.style.borderColor = "red";
-    } else if (validator.isPhoneNumber(res) !== true) {
-        number.setCustomValidity("Your input has to be in right format. Please, check it once more");
-        number.style.borderColor = "red";
-    } else {
-        number.setCustomValidity("");
-        number.style.borderColor = "green";
-    }
-}
-
-// Validates user password 
-function isPassWord(chars) {
-    var val = chars.value;
-    if (validator.isEmpty(val)) {
-        chars.setCustomValidity("Please, create a password");
-        chars.style.borderColor = "red";
-    } else if (val.length < 6 || val.length > 8) {
-        chars.setCustomValidity("Your password has to be from 6 length long to 8");
-        chars.style.borderColor = "red";
-    } else {
-        chars.setCustomValidity("");
-        chars.style.borderColor = "green";
-    }
-}
-
-// Confirms the password
-function confPassword(input) {
-    var passw2 = input.value;
-    var passw1 = document.getElementById("passw").value;
-    if (validator.isEmpty(passw2)) {
-        input.setCustomValidity("Last but not least, please confirm your password for me !");
-        input.style.borderColor = "red";
-    } else if (passw1 !== passw2) {
-        input.setCustomValidity("Hmm... Passwords are not matching! They should be identical.");
-        input.style.borderColor = "red";
-    } else {
-        input.setCustomValidity("");
-        input.style.borderColor = "green";
-    }
-  }
-}
-
-
-
-
-
-
