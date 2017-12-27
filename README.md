@@ -19,7 +19,7 @@
 ### Section 2: Intermediate Projects
 
 * [Product Listing Page](https://tiyor.github.io/Learning-web-components/Product/)  
-* [Image_Gallery](https://tiyor.github.io/Learning-web-components/Image/)  
+* [Image_Gallery](https://tiyor.github.io/Learning-web-components/Image_Gallery/)  
 
 
             
