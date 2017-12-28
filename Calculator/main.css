@@ -85,20 +85,20 @@ h6 {
 	text-shadow:#cc33ff 0px 1px 0, #000 0 -1px 0;
 }
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 360px) and (orientation: portrait) {
 	#container {
-		width: 100%;
+		width: 90%;
 	}
 }
 
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 600px) and (orientation: portrait) {
 	#container {
-		width: 100%;
+		width: 50%;
 	}
 }
 
-@media screen and (max-width: 360px) and (orientation: portrait) {
+@media only screen and (min-width: 360px) and (orientation: portrait) {
 	#container {
-		width: 100%;
+		width: 400%;
 	}
 }
