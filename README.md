@@ -20,6 +20,6 @@
 
 * [Product Listing Page](https://tiyor.github.io/Learning-web-components/Product/)  
 * [Image_Gallery](https://tiyor.github.io/Learning-web-components/Image_Gallery/)  
-
+* [NavBar](https://tiyor.github.io/Learning-web-components/Nav/)
 
             
