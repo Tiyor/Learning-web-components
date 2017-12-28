@@ -84,3 +84,21 @@ h6 {
 	color: white;
 	text-shadow:#cc33ff 0px 1px 0, #000 0 -1px 0;
 }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+	#container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+	#container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait) {
+	#container {
+		width: 100%;
+	}
+}
