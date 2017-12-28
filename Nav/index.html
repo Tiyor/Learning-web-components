@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Navigation Bar </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body>
+
+    <section id="nav">
+
+        <!-- Creates nav bar skeleton -->
+        <nav id="navBar">
+            <ul class="nav">
+                <li><a href="#home" class="scroll">HOME</a></li>
+                <li><a href="#about" class="scroll">ABOUT</a></li>
+                <li><a href="#projects" class="scroll">PROJECTS </a></li>
+                <li><a href="#skills" class="scroll">SKILLS</a></li>
+                <li><a href="#contact" class="scroll">CONTACT</a></li>
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">√</button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Creates progress-bar -->
+    <section class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </section>
+    
+    <!-- Creates nav bar content -->
+    <section id="content">
+
+        <article id="home" class="active">
+            <h2>Welcome to Home </h2>
+            <p>Hac habitasse platea dictumst quisque sagittis purus sit.</p>
+            <p>Sapien et ligula ullamcorper malesuada proin libero. </p>
+        </article>
+
+        <article id="about">
+            <h2>About</h2>
+            <p> Cursus in hac habitasse platea dictumst quisque sagittis purus sit.</p>
+            <p>Pulvinar sapien et ligula ullamcorper malesuada proin libero. </p>
+        </article>
+
+        <article id="projects">
+            <h2>Projects</h2>
+            <p>Neque convallis a cras semper auctor neque vitae.</p>
+            <p>Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus.</p>
+            <p>Consequat id porta nibh venenatis cras.</p>
+        </article>
+
+        <article id="skills">
+            <h2> Skills</h2>
+            <p>Imperdiet sed euismod nisi porta.</p>
+            <p>Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales.</p>
+        </article>
+
+        <article id="contact">
+            <h2>Contact</h2>
+            <p>Risus viverra adipiscing at in tellus integer feugiat scelerisque.</p>
+            <p>Fringilla urna porttitor rhoncus dolor purus non enim praesent.</p>
+        </article>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+
+</html>
