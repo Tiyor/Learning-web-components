@@ -1,0 +1,74 @@
+
+body {
+  background-color: #ffffe6;
+  width: 655px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  margin-top: 80px;
+  font-family: helvetica, arial, sans-serif;
+  
+}
+
+/* Styles display container */
+.full-img {
+  position: relative;
+  display: block;
+  width: 655px;
+  height: 480px;
+}
+
+.full-img .displayed-img {
+  width: 655px;
+  height: 480px;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 655px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
+}
+
+/* Styles 'switch' button */
+button {
+  font-size: 13px;
+  background: rgba(150,150,150,1);
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  border: 2px solid orange;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+/* Styles images */
+.container img {
+  padding: 1px;
+  display: block;
+  width: 19.5%;
+  float: left;
+  cursor: pointer;
+}
+
+.container img:hover {
+  border: 2px solid lime;
+}
+
+/* Styles container for animated text lines */
+.caption-container {
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.8);
+  padding: 2px 16px;
+  color: white;
+  font-size: 18px;
+}
