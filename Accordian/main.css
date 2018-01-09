@@ -1,45 +1,61 @@
 
 html {
-	background-color: #33cccc;
+	background-color: rgba(235,233,249,1);
 }
 
 .welcome * {
-	color: #3399ff; 
+	color: rgba(255,175,75,1);
 	font-family: 'Righteous', cursive; 
-	font-size: 35px; 
+	font-size: 2rem; 
 	font-weight: normal; 
-	line-height: 30px; 
+	line-height: 1.2rem; 
 	margin: 30px 0 20px; 
 	text-transform: uppercase; text-shadow: 2px 2px 0 #000; 
 	text-align: center; 
 }
 
 .accordion {
-	background: #f1f1f1;
-	border-radius: 8px;
-	margin: auto;
-	width: 600px;	
+	background: #fff;
+	margin: 30px auto;
+	width: 45%;	
+
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
 }
 
 section p {
-	background: light-grey;
 	max-height: 0em;
 	margin: 0;
 	overflow: hidden;
 }
 
 section a {
-	background: #ff33cc;
-	border: 2px solid #00ff00;
-	border-radius: 10px;
+	background: linear-gradient(#111, #333);
+	border: 2px solid black;
 	color: white;
 	display: block;
 	padding: 10px;
 	text-decoration: none;
 	text-align: center;
+	
 }
 
 section:target p {
 	max-height: 20em;
 	padding: 8px;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+@media screen and (max-device-width: 480px){
+  .accordion {
+  	width: 100%;
+  	height: auto;
+  }
 }
