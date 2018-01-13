@@ -1,97 +1,180 @@
-
-.container {
-	background-color: #DAF7A6;
+html {
+  background-color: rgba(235,233,249,1);
 }
 
-/* --- Checkout screen --- */
-.main-unit {   
-	background-color: #DAF7A6;
-	font-family: verdana;
-	font-size: 35px;
-	font-weight: bold;
-	letter-spacing: 3px;
-	padding-top: 20px;
-	padding-left: 40px;
-	text-align: left;
-	text-decoration: none;
+/* Form body */
+#container {
+  max-width: 480px;
+  height: auto;
+  background-color: rgba(235,233,249,1);
+  margin: 80px;
 }
-
-.coupon {
-	font-family: calibri;
-	font-size: 18px;	
-	text-align: left;
-	width: 650px;
-}
-
-.coupon a {
-	text-decoration: none;
-}
-
-/* --- Container for two forms --- */
-.row {
-	background:url(./money-256314_1280.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	height: 800px;
-	margin-top: 55px;
-}
-
 
 fieldset {
-	border-radius: 8px;    
-}
-
-label {
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	text-align: center;	
+  background-color: white;
+  border-radius: 8px;
 }
 
 legend {
-	background-color: light-green;
-	color: #15D808;
-	font-size: 28px;
-	letter-spacing: 2px;
+  background-color: white;
+  border-radius: 6px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 6px #EBEBEB;
 }
 
-/* --- Billing Information --- */
-.row1 {
-	display: inline-block;
-	margin-left: 200px;
-	padding-top: 110px;	
+/* Form sections */
+article {
+  display: inline-block;
+  margin: 10px;
+  width: 42%;
 }
 
-/* --- Shipping Information --- */
-.row2 {
-	display: inline-block;
-	float: right;
-	margin-right: 200px;
-	padding-top: 90px;
+article label {
+  display: block;
+  text-align: left;
+  color: blue;
+  padding-bottom: 1px;
+  font-size: 0.75rem;
 }
 
-form .no-cash {
-	border-radius: 5px;
-	display: block;
-	font-size: 16px;
-	height: 30px;
-	margin: 10px 0 10px 0;
-	padding: 5px;
-	width: 350px;
+/* Input fields */
+input.info {
+  width: 95%;
+  height: 1.9rem;
+  padding-left: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  outline: none;
 }
 
-.button {
-	background: rgb(28, 184, 65);
-	border-radius: 4px;
-	color: white;
-	font-size: 25px;
-	height: 45px;
-	margin-top: 10px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	width: 398px;
+input.info:focus {
+  -moz-box-shadow: 0 0 8px #88D5E9;
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
 }
 
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+}
 
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
 
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
 
+/* Question */ 
+.question p {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+/* Submit button */
+button {
+  display: inline-block;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 1px solid black;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+button:active {
+  background-color: blcue;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+/* ~~~~~ Media Queries ~~~~~ */
+
+/* Mobile Phones  */
+@media only screen and (min-width: 22.5em) and (orientation: portrait) {
+  #container {
+    width: 100%;
+    margin: 3px;
+    height: auto;
+  }
+
+  .question p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 37.5em) and (orientation: portrait) {
+  #container {
+    width: 100%;
+    margin: 100px;
+    height: auto;
+  }
+
+  .question p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 77.5em) and (orientation: portrait) {
+  #container {
+    width: 100%;
+    margin: 80px;
+    height: auto;
+  }
+
+  .question p {
+    font-size: 1.3rem;
+  }
+}
