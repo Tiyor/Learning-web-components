@@ -1,176 +1,206 @@
-
 html {
-       background-color: #333;
-}
-
-body {
-       background-color: #fff;
-       position: relative;
-       margin: 0 auto;
-       width: 420px; 
+  background-color: #333;
 }
 
 /* --- Body of the card --- */
 .main {
-       border: 2px solid blue;
-       margin: auto;
-       margin-top: 200px;
-       height: 458px;
+  background-color: #fff;
+  border: 2px solid blue;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 200px;
+  max-width: 420px;
+  height: auto;
+  box-shadow: 3px 2px 2px 3px grey;
 }
 
 /* --- Starter section(picture) --- */
-.main img {
-       height: 30px;
-       padding-left: 20px;
-       width: 120px;   
+.main p {
+  color: white;
+  vertical-align: center;
+  display: inline-block;
+  font-size: 18px;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.main p {
-	color: white;
-	display: inline-block;
-	font-size: 18px;
-	padding-left: 30px;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+.main img {
+  height: 30px;
+  padding-left: 20px;
 }
 
 .starter {
-	border: 2px solid red;
-	background-color: #cc99ff;
+  background-color: #cc99ff;
+  border-radius: 9px;
 }
 
 #credit_card {
-        margin-top: 7px;
+  margin-top: 7px;
 }
 
 /* --- Card Information details --- */
-.details{
-	display: block;
-        border-radius: 15px;
-	height: 20px;
-	font-size: 18px;
-        color : #003300;
-	margin: 5px 10px 5px 10px;
-	width: 370px;	
+.details {
+  display: block;
+  border-radius: 15px;
+  height: 20px;
+  font-size: 18px;
+  color: #003300;
+  margin: 2px 10px 5px 10px;
+  width: 88%;
 }
 
 .card-details input[type="text"] {
-        border: solid 3px #c9c9c9;
-        box-shadow: inset 0 0 0 1px #707070;
-        padding: 10px 10px 10px 15px;
-        transition: box-shadow 0.3s, border 0.3s;
+  border: solid 3px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  padding: 15px 10px 10px 15px;
+  transition: box-shadow 0.3s, border 0.3s;
 }
 
-.card-details input[type="text"]:focus,
-.card-details input[type="text"].focus {
-        border-bottom: solid 3px #0000ff;
+.card-details input[type="text"]:focus {
+  border-bottom: 2px solid #0000ff;
+  outline: none;
 }
 
 /* --- Date expiration --- */
-select  {
-	background: #00ffff;
-	border: #c61aff;
-	color: black;
-	height: 30px; 
+select {
+  background: #00ffff;
+  border: #c61aff;
+  color: black;
+  font-weight: bold;
+  height: 30px;
+  margin: 5px;
+  outline: none;
 }
 
 /* --- Security Code --- */
 .security .CVC {
-	background: #fff;
-	border: 2px solid #e1e8ee;
-	border-radius: 15px;
-	display: inline-block;
-	font-size: 18px;
-        color : #003300;
-	height: 20px;
-	margin: 10px;
-	width: 100px;
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #e1e8ee;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #003300;
+  height: 20px;
+  margin: 10px;
+  width: 20%;
+  outline: none;
 }
 
 .security input[type="text"] {
-	border: solid 3px #c9c9c9;
-        box-shadow: inset 0 0 0 1px #707070;
-        padding: 8px;
-        transition: box-shadow 0.3s, border 0.3s;
+  border: solid 3px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  padding: 8px;
+  transition: box-shadow 0.3s, border 0.3s;
 }
 
-.security input[type="text"]:focus,
-.security input[type="text"].focus {
-        border-bottom: solid 3px #0000ff;
+.security input[type="text"]:focus {
+  border-bottom: solid 3px #0000ff;
 }
 
 /* --- Tooltip --- */
 [data-tip] {
-	position:relative;
-
+  position: relative;
 }
+
 [data-tip]:before {
-	content:'';
-	display: none;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid #1a1a1a;	
-	position:absolute;
-	margin-left: 100px;
-	top: 30px;
-	left: 35px;	
+  content: '';
+  display: none;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #1a1a1a;
+  position: absolute;
+  margin-left: 100px;
+  top: 30px;
+  left: 35px;
 }
 
 [data-tip]:after {
-	background: #1a1a1a;
-	border-radius: 3px;
-	color: #fff;
-	content: attr(data-tip);
-	display: none;
-	font-size: 0.75em;
-	height: 18px;
-	line-height: 18px;
-	left: 0px;
-	padding: 5px 8px;
-	position: absolute;
-	top: 35px;
-	white-space: nowrap;
-	word-wrap: normal;
+  background: #1a1a1a;
+  border-radius: 3px;
+  color: #fff;
+  content: attr(data-tip);
+  display: none;
+  font-size: 0.75em;
+  height: 18px;
+  line-height: 18px;
+  left: 0px;
+  padding: 5px 8px;
+  position: absolute;
+  top: 35px;
+  white-space: nowrap;
+  word-wrap: normal;
 }
 
 [data-tip]:hover:before,
 [data-tip]:hover:after {
-       display:block;
+  display: block;
 }
 
-
 label {
-	padding: 15px; 
-	text-shadow: #444;
+  padding-left: 15px;
+  text-shadow: #444;
+  font-size: 14px;
 }
 
 button {
-	color: green;
-        background-color:lightgrey;
-	display: block;
-	font-size: 20px;
-	font-weight: bold; 
-	letter-spacing: 4px;
-        margin: 10px;
-        width: 395px; 
-        height:45px;
-        border-radius: 15px;
+  color: green;
+  background-color: lightgrey;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 10px;
+  width: 95%;
+  height: 45px;
+  border-radius: 15px;
+  outline: none;
 }
 
-/* --- Validated input styling--- */
+/* --- Styles validating input elements--- */
 #credit_card input:required:valid {
-        border-left-color: palegreen;
+  border-left-color: palegreen;
 }
 
 #credit_card input:invalid {
-       border-left-color: red;
+  border-left-color: red;
 }
 
 #credit_card input:optional {
-       border-left-color: palegreen;
+  border-left-color: blue;
 }
 
+/* ~~~~~ Media Queries ~~~~~ */
 
+/* Mobile Phones  */
+@media only screen and (min-width: 22.5em) and (orientation: portrait) {
+  .main {
+    width: 100%;
+    margin: 2px;
+    height: auto;
+  }
+}
 
+/* Tablet */
+@media only screen and (min-width: 37.5em) and (orientation: portrait) {
+  .main {
+    width: 100%;
+    margin: 80px;
+    height: auto;
+  }
+}
+
+/* Desktop */
+@media only screen 
+  and (min-device-width: 77.5em) 
+  and (max-device-width: 86em) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .main {
+    width: 100%;
+    margin: 80px;
+    height: auto;
+  }
+}
 
 
 
