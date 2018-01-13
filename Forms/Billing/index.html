@@ -1,57 +1,124 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> Billing & Shipping Forms</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+    <title>Billing/Shipping Form </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
+    <section id="container">
+      <form action="..." method="GET" name="billingAnDshippingform" enctype="multipart/form-data">
+        
+        <section class="billing">
+            
+                <fieldset>
+                    <legend> BILLING ADRESS </legend>
 
-    <div class="container">
+                    <article class="firstname">
+                        <label for="fname"> FIRST NAME </label>
+                        <input type="text" name="fname" class="info" id="fname" placeholder="e.g. Tom" required pattern="^[A-Za-z]+$" />
+                    </article>
 
-        <!-- Main content -->
-        <div class="main-unit">
-            <p><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </a>CHECKOUT... </p>
-            <div class="coupon">
-            	<p> <i class="fa fa-gift" aria-hidden="true"></i> Have a coupon?
-                <a href="#"><strong>Click here to enter your code</strong></a>
-                </p>
-            </div>    	
-        </div>
+                    <article class="lastname">
+                        <label for="lname"> LAST NAME </label>
+                        <input type="text" name="lname" class="info" id="lname" placeholder="e.g. Elov" required pattern="^[A-Za-z]+$" />
+                    </article>
 
-        <div class="row">
-            <!-- Billing address -->
-            <div class="row1">
-                <form class="billing">
-                  <fieldset>
-                    <legend>BILLING INFORMATION</legend>
-                    <label for="firstname">First name:</label><input class="no-cash" type="text" id="firstname" autofocus required>
-                    <label for="lastname">Last name:</label><input class="no-cash" type="text" id="lastname" required>
-                    <label for="address">Address:</label><input class="no-cash" type="text" id="address" required>
-                    <label for="city">City:</label><input class="no-cash" type="text" id="city" required>
-                    <label for="country2">Country:</label><input class="no-cash" type="text" id="country2" required>
-                  </fieldset>
-                </form>	
-            </div>
+                    <article class="adress1">
+                        <label for="adress"> ADRESS LINE 1 </label>
+                        <input type="text" name="adress" class="info" id="adress" placeholder="e.g. 1310 Turk st" required pattern="^[A-Za-z0-9]+$" />
+                    </article>
 
-            <!-- Shipping address -->
-            <div class="row2">
-                <form class="shipping">
-                  <fieldset>
-                    <legend>SHIPPING INFORMATION</legend>
-                    <label for="billing-info">Same as my billing address:</label><input class="no-cash" type="checkbox" id="billing-info" name="billing-info" autofocus>
-                    <label for="firstname2">First name:</label><input class="no-cash" type="text" id="firstname2"  required>
-                    <label for="lastname2">Last name:</label><input class="no-cash" type="text" id="lastname2" required>
-                    <label for="address2">Address:</label><input class="no-cash" type="text" id="address2" required>
-                    <label for="city">City:</label><input class="no-cash" type="text" id="city" required>
-                    <label for="country2">Country:</label><input class="no-cash" type="text" id="country2" required>
-                  </fieldset>
-                    <button type="submit" class="button"> SUBMIT </button>
-                </form>    	
-            </div>  
-        </div>  	
-    </div>
+                    <article class="adress2">
+                        <label for="adress"> ADRESS LINE 2 </label>
+                        <input type="text" name="adress" class="info" id="adress" required pattern="^[A-Za-z0-9]+$" />
+                    </article>
+
+                    <article class="city">
+                        <label for="city"> CITY </label>
+                        <input type="text" name="city" class="info" id="city" placeholder="e.g. San Francisco" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="state">
+                        <label for="state"> STATE </label>
+                        <input type="text" name="state" class="info" id="state" placeholder="e.g. California" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="zip">
+                        <label for="zipcode"> ZIP CODE </label>
+                        <input type="number" name="zipcode" class="info" id="zipcode" placeholder="e.g. 94115" required pattern="^\d{5}([-]\d{4})?$" />
+                    </article>
+
+                    <article class="country">
+                        <label for="country"> COUNTRY </label>
+                        <input type="text" name="country" class="info" id="country" placeholder="e.g. USA" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                </fieldset>
+        </section>
+
+        <section class="question">
+                <input type="checkbox" />
+                <p> Is shipping adress same as the billing adress? </p>
+        </section>
+
+        <section class="shipping">
+
+                <fieldset>
+                    <legend> SHIPPING ADRESS </legend>
+
+                    <article class="firstname">
+                        <label for="fname"> FIRST NAME </label>
+                        <input type="text" name="fname" class="info" id="fname" placeholder="e.g. Tom" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="lastname">
+                        <label for="lname"> LAST NAME </label>
+                        <input type="text" name="lname" class="info" id="lname" placeholder="e.g. Elov" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="adress1">
+                        <label for="adress"> ADRESS LINE 1 </label>
+                        <input type="text" name="adress" class="info" id="adress" placeholder="e.g. 1310 Turk st" required pattern="^[A-Za-z0-9]+$" />
+                    </article>
+
+                    <article class="adress2">
+                        <label for="adress"> ADRESS LINE 2 </label>
+                        <input type="text" name="adress" class="info" id="adress" required pattern="^[A-Za-z0-9]+$" />
+                    </article>
+
+                    <article class="city">
+                        <label for="city"> CITY </label>
+                        <input type="text" name="city" class="info" id="city" placeholder="e.g. San Francisco" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="state">
+                        <label for="state"> STATE </label>
+                        <input type="text" name="state" class="info" id="state" placeholder="e.g. California" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                    <article class="zip">
+                        <label for="zipcode"> ZIP CODE </label>
+                        <input type="number" name="zipcode" class="info" id="zipcode" placeholder="e.g. 94115" required pattern="^\d{5}([-]\d{4})?$" />
+                    </article>
+
+                    <article class="country">
+                        <label for="country"> COUNTRY </label>
+                        <input type="text" name="country" class="info" id="country" placeholder="e.g. USA" required pattern="^[A-Za-z]+$" />
+                    </article>
+
+                </fieldset>
+        </section>
+
+        <section class="button">
+            <button> SUBMIT </button>
+        </section>
+
+      </form>
+    </section>
 </body>
+
 </html>
