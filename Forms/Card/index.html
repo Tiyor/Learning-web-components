@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> Debit card </title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <title> Debit card </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
     <div class="main">
         <div class="starter">
@@ -20,28 +24,28 @@
 
             <div class="card-details">
                 <label for="cardNum"><strong>CARD NUMBER:</strong></label>
-                <input type="text" class="details" maxlength="16" pattern="[0-9]{13,16}" name="cnumber" placeholder="xxxxxxxxxxxxxxxx" required/>
+                <input type="text" class="details" maxlength="16" pattern="[0-9]{13,16}" name="cnumber" placeholder="Valid Card Number" required/>
             </div>
 
             <div class="date-expiration">
                 <label for="date"><strong>EXPIRATION DATE:</strong></label>
-                <select required name="Month" id="date">
-                    <option value="">Month</option>
-                	<option value="0">January</option>
-	                <option value="1">February</option>
-	                <option value="2">March</option>
-	                <option value="3">April</option>
-	                <option value="4">May</option>
-	                <option value="5">June</option>
-	                <option value="6">July</option>
-	                <option value="7">August</option>
-	                <option value="8">September</option>
-	                <option value="9">October</option>
-	                <option value="10">November</option>
-	                <option value="11">December</option>
+                <select required name="month" id="date">
+                    <option value="">MONTH</option>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
                 </select>
                 <select required name="Year" class="year">
-                    <option value="">Year</option>
+                    <option value="">YEAR</option>
                     <option value="2017">2017</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
