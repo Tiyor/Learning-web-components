@@ -1,168 +1,184 @@
 
-body {
-    background-attachment: fixed;
-    background-image: url(workshop-1746275__480.jpg);
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-	
-    background-color: hsla(0,0%,100%,0.40);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;  
+ * {
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
 }
 
-h2 {
-    color: #FFFFFF;
-    font: normal 20pt Arial;
-    text-align: center;
-	
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 2px rgba(0,0,0,.1),
-    0 1px 1px rgba(0,0,0,.3),
-    0 3px 2px rgba(0,0,0,.2),
-    0 5px 5px rgba(0,0,0,.25),
-    0 10px 5px rgba(0,0,0,.2),
-    0 20px 10px rgba(0,0,0,.15);
+ body {
+     background-attachment: fixed;
+     background-image: url(workshop-1746275__480.jpg);
+     background-color: hsla(0,0%,100%,0.40);
+     background-repeat:no-repeat;
+     -webkit-background-size:cover;
+     -moz-background-size:cover;
+     -o-background-size:cover;
+     background-size:cover;
+     background-position:center;
 }
 
-/* --- Container --- */
-.container {
-    width: 720px;
-    height: 520px;
-    margin: 0 auto;
-    background-color: rgba(0,0,0,0.5);
-    margin-top: 60px;
-    margin-right: 60px;
-    padding-top: 10px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -o-border-radius: 15px;
-    -moz-border-radius:15px;
-    color: white;
-    font-weight: bolder;
-    box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+ .container {
+     width: 700px;
+     height: 480px;
+     background-color: rgba(0,0,0,0.5);
+     margin: 60px;
+     float: right;
+     padding-top: 10px;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -o-border-radius: 15px;
+     -moz-border-radius:15px;
+     color: white;
+     font-weight: bolder;
+     box-shadow: inset -4px -4px rgba(0,0,0,0.5);
 }
 
-.inner-Wrapper .wrapper{
-    background-color: transparent; 
-    border-style: solid; 
-    border-width: 0px 0px 1px 0px; 
-    border-color: white;
-    height: 35px;
-    width: 300px;
-    margin-top: 10px;
-    margin-left: 130px;
-	
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+ h2 {
+     color: #FFFFFF;
+     font: normal 1.6rem Arial;
+     text-align: center;
+     text-shadow: 0 1px 0 #ccc, 
+     0 2px 0 #c9c9c9, 0 3px 0 #bbb, 
+     0 6px 1px rgba(0,0,0,.1), 
+     0 0 2px rgba(0,0,0,.1), 
+     0 1px 1px rgba(0,0,0,.3), 
+     0 3px 2px rgba(0,0,0,.2), 
+     0 5px 5px rgba(0,0,0,.25), 
+     0 10px 5px rgba(0,0,0,.2), 
+     0 20px 10px rgba(0,0,0,.15);
 }
 
-.phone {
-    width: 300px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 52px;
-    background-color: transparent; 
-    border-style: solid; 
-    border-width: 0px 0px 1px 0px; 
-    border-color: white;
-
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
+ .inner-Wrapper .wrapper{
+     background-color: transparent;
+     border-style: solid;
+     border-width: 0px 0px 1px 0px;
+     border-color: white;
+     height: 30px;
+     margin-top: 8px;
+     text-align: center;
+     color: white;
+     font-size: 0.9rem;
+     font-weight: bold;
 }
 
-.date {
-    display: inline-block;
-    width: 120px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 94px;
+ .inner-Wrapper > div {
+     clear: both;
+     overflow: hidden;
+     padding: 1px;
+     margin: 0 0 10px 20px;
 }
 
-.time {
-    display: inline-block;
-    width: 120px;
-    height: 35px;
-    margin-top: 10px;
-    float: right;
-    margin-right: 232px;
+ .inner-Wrapper > div > label {
+     width: 25%;
+     float: left;
+     padding-right: 10px;
 }
 
-label {
-    padding-left: 20px;
+ input[type=text], textarea {
+     width: 50%;
 }
 
-.inner-Wrapper textarea {
-    height: 55px;
-    margin-left: 141px;
-
-    background-color: transparent; 
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: white;
-    margin-top: 10px;
-    width: 300px;
-
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
+ .date, .time {
+     display: inline-block;
+     height: 35px;
+     margin-top: 10px;
+     padding-left: 20px;
 }
 
-.inner-Wrapper textarea:focus {
-    background-color: lightblue;
+ .inner-Wrapper textarea {
+     height: 55px;
+     background-color: transparent;
+     border-style: solid;
+     border-width: 1px;
+     border-color: white;
+     margin-top: 10px;
+     text-align: center;
+     font-size: 0.9rem;
+     color: white;
+     font-weight: bold;
 }
 
-input::placeholder {
-    color: white;
+ .inner-Wrapper textarea:focus {
+     background-color: lightblue;
 }
 
-.inner-Wrapper textarea::placeholder {
-    color: white;
+ input::placeholder {
+     color: white;
 }
 
-.check {
-    display: inline-block;
-    margin-top: 15px;	
-    text-align: right;
+ .inner-Wrapper textarea::placeholder {
+     color: white;
 }
 
-button {
-    width: 310px;
-    height: 45px;
-    margin-top: 16px;
-    float: center;
-    margin-left: 210px;
-    border-radius: 10px;
-
-    color: black;
-    letter-spacing: 3px;
-    font-weight: bold;
-    border-bottom: 2px white;
-
-    font: bold 20px arial, sans-serif;
-    background-color: black;
-    color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.7);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+ button {
+     width: 310px;
+     height: 45px;
+     margin-top: 16px;
+     float: center;
+     outline-style: none;
+     margin-left: 190px;
+     border-radius: 10px;
+     color: black;
+     letter-spacing: 3px;
+     font-weight: bold;
+     border-bottom: 2px white;
+     font: bold 1.7rem arial, sans-serif;
+     background-color: black;
+     color: transparent;
+     text-shadow: 2px 2px 3px rgba(255,255,255,0.7);
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     background-clip: text;
 }
 
-button:hover {
-    cursor: pointer;
-    color: #FFF;
-    background: #006600;
+ button:hover {
+     cursor: pointer;
+     color: #FFF;
+     background: #006600;
 }
+/* =================== Media Queries ====================== */
+
+/* Mobile Phones */
+ @media only screen and (min-width: 22.5em) and (orientation: portrait) {
+     .container {
+         width: 100%;
+         height: auto;
+         margin: 10px auto;
+    }
+     .inner-Wrapper .wrapper {
+         width: 60%;
+    }
+     h2 {
+         font-size: 1.2rem;
+    }
+     .inner-Wrapper .date {
+         margin-left: -20px;
+    }
+     .inner-Wrapper textarea {
+         width: 60%;
+    }
+     button {
+         height: 35px;
+         width: 55%;
+         font-size: 1.4rem;
+         margin: 0px 40px 8px 110px;
+    }
+}
+/* Tablet */
+ @media only screen and (min-width: 37.5em) and (orientation: portrait) {
+     .container {
+         width: 90%;
+         height: 100%;
+         margin: 30px;
+    }
+     button {
+         margin-left: 180px;
+    }
+}
+/* Desktop */
+ @media only screen and (min-width: 77.5em) and (orientation: portrait) {
+     .container {
+         width: 100%;
+    }
+}
+ 
