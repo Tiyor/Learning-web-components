@@ -2,55 +2,83 @@
 <html>
 
 <head>
-    <title> Scheduling Form </title>
+    <title> Form </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div class="container">
+
         <form>
-            <!-- Name of the form -->
             <div class="main">
                 <h2> BUSINESS SCHEDULING FORM </h2>
             </div>
 
             <!-- Form inputs -->
             <div class="inner-Wrapper">
-                <label for="name">NAME :</label>
-                <input type="text" onkeyup='validateName()' class="wrapper" name="full-name" id="name" placeholder="Your full name" /></br>
-                <label id="promptName"></label>
+                <div>
+                    <label for="name">NAME:</label>
+
+                    <div>
+                        <input type="text" onkeyup='validateName()' class="wrapper" name="full-name" placeholder="Your full name" />
+                        <label id="promptName"></label>
+                    </div>
+                </div>
             </div>
 
             <div class="inner-Wrapper">
-                <label for="email">EMAIL:</label>
-                <input type="text" onkeyup="validateEmail()" class="wrapper" name="email" id="email" placeholder="Your email" /></br>
-                <label id="promptEmail"></label>
+                <div>
+                    <label for="email">EMAIL:</label>
+
+                    <div>
+                        <input type="text" onkeyup="validateEmail()" class="wrapper" name="email" id="email" placeholder="Your email" />
+                        <label id="promptEmail"></label>
+                    </div>
+                </div>
             </div>
 
             <div class="inner-Wrapper">
-                <label for="phone">PHONE NUMBER:</label>
-                <input type="text" onkeyup='validatePhone()' class="phone" name="Phone-number" id="phone" placeholder="xxx-xxxxxxx" /></br>
-                <label id="promptPhone"></label>
+                <div>
+                    <label for="phone">PHONE:</label>
+
+                    <div>
+                        <input type="text" onkeyup='validatePhone()' class="wrapper" name="Phone-number" id="phone" placeholder="xxx-xxxxxxx" />
+                        <label id="promptPhone"></label>
+                    </div>
+                </div>
             </div>
 
             <div class="inner-Wrapper">
-                <label for="date"> DATE/TIME:</label>
-                <input type="date" onkeyup="validateTime()" class="date" name="today" id="date" />
-                <input type="time" onkeyup="validateTime()" class="time" name="Time" id="date" />
-                <label id="promptTime"></label>
+                <div>
+                    <label for="date"> DATE:</label>
+
+                    <div class="time">
+                        <input type="date" onkeyup="validateTime()" class="date" name="today" id="date" />
+                        <input type="time" onkeyup="validateTime()" class="time" name="Time" id="date" />
+                        <label id="promptTime"></label>
+                    </div>
+                </div>
             </div>
 
             <div class="inner-Wrapper">
-                <label for="text">TEXT:</label>
-                <textarea form="appoinment" onkeyup="validateText()" name="message" id="text" cols="15" placeholder="Leave your message"></textarea><br>
-                <label id="promptText"></label>
+                <div>
+                    <label for="text">TEXT:</label>
+
+                    <div>
+                        <textarea form="appoinment" onkeyup="validateText()" name="message" id="text" cols="15" placeholder="Leave your message"></textarea>
+                        <label id="promptText"></label>
+                    </div>
+                </div>
             </div>
 
         </form>
-        <button type="button" onclick="submitForm()" name="submit">SUBMIT</button></br>
+
+        <button type="button" onclick="submitForm()" name="submit">SUBMIT</button>
         <label id="promptSubmit"></label>
     </div>
- <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
