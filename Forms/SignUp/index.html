@@ -3,54 +3,50 @@
 
 <head>
     <title>Sign up form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
 </head>
 
 <body>
     <form id="signUp">
         <div class="sign-up">
 
-            <legend>Sign Up Form:<span>&#9998;</span> </legend>
+            <legend>Signup Form:<span>&#9998;</span> </legend>
 
             <div class="innerWrapper">
-                <input type="text" class="style fname" name="firstname" id="fName" placeholder="First name" />
-                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="text" class="style fname" name="firstname" placeholder="First name" />
             </div>
 
             <div class="innerWrapper">
-                <input type="text" class="style lname" name="lastname" id="lName" placeholder="Last name" />
-                <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="text" class="style lname" name="lastname" placeholder="Last name" />
             </div>
 
             <div class="innerWrapper">
-                <input type="email" class="style email" name="email" id="em" placeholder="jonBones@gmail.com" />
-                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="email" class="style email" name="email" placeholder="jonBones@gmail.com" />
             </div>
 
             <div class="innerWrapper">
-                <input type="date" class="style dofbirth" name="bdaymonth" id="dob" placeholder="DOB (MM/DD/YY)">
-                <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="date" class="style dofbirth" name="bdaymonth" placeholder="DOB (MM/DD/YY)">
             </div>
 
             <div class="innerWrapper">
-                <input type="text" class="style pnumber" name="usrtel" id="pn" placeholder="Phone number">
-                <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="text" class="style pnumber" name="usrtel" placeholder="Phone number">
             </div>
 
             <div class="innerWrapper">
-                <input type="password" class="style password" name="psw" id="passw" placeholder="Password" />
-                <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="password" class="style password" name="psw" placeholder="Password" />
             </div>
 
             <div class="innerWrapper">
-                <input type="password" class="style confpassw" name="psw" id="cpassw" placeholder="Confirm password" />
-                <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                <input type="password" class="style confpassw" name="psw" placeholder="Confirm password" />
             </div>
 
-            <input type="checkbox" name="result" required autofocus><label for="check"> AGREE OUR TERMS AND CONDITIONS </label>
-            <input type="submit" id="subMit" class="submit" value="SUBMIT">
+            <div class="checkbox">
+                <input type="checkbox" name="result" required autofocus>
+                <label for="check"> ACCEPT TERMS & CONDITIONS </label>
+            </div>
+
+            <input type="submit" class="submit" value="SUBMIT">
 
         </div>
     </form>
