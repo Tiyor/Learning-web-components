@@ -34,7 +34,7 @@
 
               $('html, body').stop().animate({
                   'scrollTop': $target.offset().top
-              }, 4000, 'swing', function() {
+              }, 2000, 'swing', function() {
                   window.location.hash = target;
               });
           });
