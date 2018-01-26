@@ -9,7 +9,7 @@ var overlay = document.querySelector('.overlay');
 /* Looping through images */
 for (var i = 1; i <= 5; i++) {
     var newImage = document.createElement('img');
-    newImage.setAttribute('src', 'Images/pic' + i + '.jpeg');
+    newImage.setAttribute('src', 'images/pic' + i + '.jpeg');
     container.appendChild(newImage);
     newImage.onclick = function(e) {
         var imgSrc = e.target.getAttribute('src');
