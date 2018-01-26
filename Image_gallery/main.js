@@ -1,3 +1,4 @@
+
 /* Getting element values */
 var displayedImage = document.querySelector('.displayed-img');
 var container = document.querySelector('.container');
@@ -8,7 +9,7 @@ var overlay = document.querySelector('.overlay');
 /* Looping through images */
 for (var i = 1; i <= 5; i++) {
     var newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/pic' + i + '.jpeg');
+    newImage.setAttribute('src', 'Images/pic' + i + '.jpeg');
     container.appendChild(newImage);
     newImage.onclick = function(e) {
         var imgSrc = e.target.getAttribute('src');
@@ -35,8 +36,8 @@ btn.onclick = function() {
 }
 
 /* Animating text lines */
-var text = ["'Good moms = Sticker floors + dirty ovens + happy kids'",
-    "'Just hearing their little laughter makes all the tiredness go away'",
+var text = ["'Good mom = Sticker floors + dirty ovens + happy kids'",
+    "'Hearing their little laughter makes all the tiredness go away'",
     "'Just let them be a little...'"
 ];
 var counter = 0;
